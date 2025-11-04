@@ -25,7 +25,7 @@ def getresult():
 
     timezone=tz.time_zones_for_number(numobj=num1)
 
-    ocg=OpenCageGeocode("404a79d0b0a64fd89a9d317bbe04add8")
+    ocg=OpenCageGeocode(ApiKey)
     query=str(location)
     results=ocg.geocode(query)
 
@@ -57,3 +57,4 @@ Button.pack(pady=10,padx=100)
 result=Text(height=7)
 result.pack()
 root.mainloop()
+
